@@ -25,21 +25,21 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                            <a class="nav-link" href="sobre-mi.php">Sobre Mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="proyectos.html">Proyectos</a>
+                            <a class="nav-link active" href="proyectos.php">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.php">Contacto</a>
                         </li>
                     </ul>
                     <ul class="cv navbar-nav">
                         <li class="float-sm-end">
-                            <a class="cv btn-blanco" href="contacto.html">Descargar mi CV <i
+                            <a class="cv btn-blanco" href="contacto.php">Descargar mi CV <i
                                     class="fa-solid fa-download"></i></a>
                         </li>
                     </ul>

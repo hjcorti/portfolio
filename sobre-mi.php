@@ -25,21 +25,21 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="sobre-mi.html">Sobre Mí</a>
+                            <a class="nav-link active" href="sobre-mi.php">Sobre Mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            <a class="nav-link" href="proyectos.php">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.php">Contacto</a>
                         </li>
                     </ul>
                     <ul class="cv navbar-nav">
                         <li class="float-sm-end">
-                            <a class="cv btn-blanco" href="contacto.html">Descargar mi CV <i
+                            <a class="cv btn-blanco" href="contacto.php">Descargar mi CV <i
                                     class="fa-solid fa-download"></i></a>
                         </li>
                     </ul>
@@ -56,7 +56,7 @@
                     <h1 class="col-12 pt-3 py-5">Sobre mí</h1>
                     <p>Apasionado por la tecnología y gestión de proyectos. Soy docente de cursos de programación Full
                         Stack y de Base de datos.</p>
-                    <a href="contacto.html" class="btn btn-rojo my-5 d-none d-sm-block w-25">Enviar mensaje</a>
+                    <a href="contacto.php" class="btn btn-rojo my-5 d-none d-sm-block w-25">Enviar mensaje</a>
                 </div>
                 <div class="col-10 col-sm-3 py-5 pe-5 d-none d-sm-block">
                     <img src="images/hugo.jpg" alt="Hugo Javier Corti" class="img-fluid foto-perfil">
@@ -65,7 +65,7 @@
                     <img src="images/hugo.jpg" alt="Hugo Javier Corti" class="img-fluid foto-perfil">
                 </div>
                 <div class="col-6 d-sm-block d-sm-none py-3">
-                    <a href="contacto.html" class="btn btn-rojo my-5 d-sm-block d-sm-none">Enviar mensaje</a>
+                    <a href="contacto.php" class="btn btn-rojo my-5 d-sm-block d-sm-none">Enviar mensaje</a>
                 </div>
             </div>
         </section>

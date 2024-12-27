@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="shortcut icon" href="images/HC.ICO">
 
+    <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
-<body id="index" class="d-flex flex-column h-100">
+<body id="contacto" class="d-flex flex-column h-100">
     <header class="container">
         <nav class="navbar navbar-expand-md mb-4">
             <div class="container-fluid">
@@ -26,51 +26,68 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Inicio</a>
+                            <a class="nav-link " href="index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                            <a class="nav-link" href="sobre-mi.php">Sobre Mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            <a class="nav-link" href="proyectos.php">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link px-4 active" href="contacto.php">Contacto</a>
                         </li>
                     </ul>
                     <ul class="cv navbar-nav">
                         <li class="float-sm-end">
-                            <a class="cv btn-blanco" href="contacto.html">Descargar mi CV <i
+                            <a class="cv btn-blanco" href="contacto.php">Descargar mi CV <i
                                     class="fa-solid fa-download"></i></a>
                         </li>
                     </ul>
-
+                    <!-- <div class="cv">
+                            <a href="">Descargar mi CV <i class="fas fa-download"></i></a>
+                        </div>
+                    -->
                 </div>
             </div>
         </nav>
-
     </header>
     <main class="container">
         <div class="row">
-            <div class="col-12 mt-4 text-center div-cohete mx-auto">
-                <a href="proyectos.html"><img src="images/cohete.svg" alt="imagen cohete" class="mx-auto"></a>
+            <div class="col-12 pt-3 pb-5">
+                <h1>Contacto</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6 my-4 mt-sm-5 text-center mb-3 offset-sm-3">
-                <p class="p-1 my-3">Bienvenid@ a mi sitio web sobre docencia en sistemas</p>
+            <div class="col-12 col-sm-6">
+                <p>Te invito a que te contactes enviándome un mensaje o bien por Whatsapp</p>
+            </div>
+            <div class="col-12 col-sm-6">
+                <form action="" method="POST">
+                    <div class="pb-3">
+                        <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre"
+                            class="form-control shadow">
+                    </div>
+                    <div class="pb-3">
+                        <input type="email" name="txtCorreo" id="txtCorreo" placeholder="Email"
+                            class="form-control shadow">
+                    </div>
+                    <div class="pb-3">
+                        <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="Teléfono/WhatsApp"
+                            class="form-control shadow">
+                    </div>
+                    <div class="pb-3">
+                        <textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe aquí tu mensaje"
+                            class="form-control shadow"></textarea>
+                    </div>
+                    <div class="float-start">
+                        <button type="submit" id="btnEnviar" name="btnEnviar" class="btn">ENVIAR</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <a href="proyectos.html"class="btn boton-blancoo">Conoce mis proyectos</a>
-            </div>
-        </div>
-
-
-
     </main>
-    <footer class="container mt-auto">
+    <footer class="container mt-auto pb-4">
         <div class="row">
             <div class="col-3">
                 <a href="https://www.linkedin.com/in/hugo-javier-corti-a1a595244/" target="_blank" title="Linkedin"><i
