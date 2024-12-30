@@ -1,3 +1,5 @@
+<?php
+session_start();$pagina = "contacto"  ?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -17,40 +19,7 @@
 
 <body id="contacto" class="d-flex flex-column h-100">
     <header class="container">
-        <nav class="navbar navbar-expand-md mb-4">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link " href="index.php">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobre-mi.php">Sobre Mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="proyectos.php">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 active" href="contacto.php">Contacto</a>
-                        </li>
-                    </ul>
-                    <ul class="cv navbar-nav">
-                        <li class="float-sm-end">
-                            <a class="cv btn-blanco" href="contacto.php">Descargar mi CV <i
-                                    class="fa-solid fa-download"></i></a>
-                        </li>
-                    </ul>
-                    <!-- <div class="cv">
-                            <a href="">Descargar mi CV <i class="fas fa-download"></i></a>
-                        </div>
-                    -->
-                </div>
-            </div>
-        </nav>
+    <?php include_once("menu.php"); ?>
     </header>
     <main class="container">
         <div class="row">
