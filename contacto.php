@@ -1,4 +1,35 @@
 <?php
+$pg="contacto";
+if($_POST){
+    $nombre=$_POST["txtNombre"];
+    $correo=$_POST["txtCorreo"];
+    $telefono=$_POST["txtTelefono"];
+    $mensaje=$_POST["txtMensaje"];
+    //varios destinatarios
+    $para      = 'XXXXXXXXXXXXXXXXXXXX';
+    $titulo    = 'Recibiste un mensaje desde tu Web';
+    // mensaje
+    $cuerpo="
+    Nombre: $nombre <br>
+    Correo: $correo <br>
+    Telefono: $telefono <br>
+    Mensaje: $mensaje <br>
+    ";
+    //para enviar un correo HTML, debe establecerse la cabecera Content-type
+    $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+    $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+    // Cabeceras adicionales
+    $cabeceras.= 'To: hjcorti.07@gmail.com' . "\r\n";
+    $cabeceras .= 'From: contacto@hugocorti.com.ar' . "\r\n";
+    // Enviarlo
+    //mail($para, $titulo, $cuerpo, $cabeceras);
+    //echo "<script>alert('Mensaje enviado, Gracias por contactarnos');   HACE FALTA UN SERVIDOR DE ENVIOS PARA QUE FUNCIONE
+     header('location:confimacion-envio.php');
+}
+
+
+
+
 session_start();$pagina = "contacto"  ?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
@@ -63,7 +94,6 @@ session_start();$pagina = "contacto"  ?>
                         class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/hjcorti" target="_blank" title="Github"><i
                         class="fa-brands fa-github"></i></a>
-
             </div>
             <div class="col-3">
                 Sponsor <a href="https://academia.depcsuite.com/" target="_blank">DePcsuite</a>
@@ -72,9 +102,7 @@ session_start();$pagina = "contacto"  ?>
                 <a href="mailto:hjcorti.07@gmail.com">hjcorti.07@gmail.com</a>
             </div>
             <div class="col-3">
-
             </div>
-
         </div>
         <a href="https://api.whatsapp.com/send?phone=543462573909" target="_blank"><i
                 class="fa-brands fa-whatsapp px-3 pt-3 pb-4"></i></a>
