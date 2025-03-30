@@ -1,36 +1,41 @@
 <?php
-$pg="contacto";
-if($_POST){
-    $nombre=$_POST["txtNombre"];
-    $correo=$_POST["txtCorreo"];
-    $telefono=$_POST["txtTelefono"];
-    $mensaje=$_POST["txtMensaje"];
-    //varios destinatarios
-    $para      = 'XXXXXXXXXXXXXXXXXXXX';
-    $titulo    = 'Recibiste un mensaje desde tu Web';
-    // mensaje
-    $cuerpo="
+$pg = "contacto";
+if ($_POST) {
+    $nombre = $_POST["txtNombre"];
+    $correo = $_POST["txtCorreo"];
+    $telefono = $_POST["txtTelefono"];
+    $mensaje = $_POST["txtMensaje"];
+    //control de que no esten vacios
+    if ($nombre != "" && $correo != "" && $telefono != "" && $mensaje != "") {
+        //varios destinatarios
+        $para      = 'XXXXXXXXXXXXXXXXXXXX';
+        $titulo    = 'Recibiste un mensaje desde tu Web';
+        // mensaje
+        $cuerpo = "
     Nombre: $nombre <br>
     Correo: $correo <br>
     Telefono: $telefono <br>
     Mensaje: $mensaje <br>
     ";
-    //para enviar un correo HTML, debe establecerse la cabecera Content-type
-    $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
-    $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    // Cabeceras adicionales
-    $cabeceras.= 'To: hjcorti.07@gmail.com' . "\r\n";
-    $cabeceras .= 'From: contacto@hugocorti.com.ar' . "\r\n";
-    // Enviarlo
-    //mail($para, $titulo, $cuerpo, $cabeceras);
-    //echo "<script>alert('Mensaje enviado, Gracias por contactarnos');   HACE FALTA UN SERVIDOR DE ENVIOS PARA QUE FUNCIONE
-     header('location:confimacion-envio.php');
+        //para enviar un correo HTML, debe establecerse la cabecera Content-type
+        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+        // Cabeceras adicionales
+        $cabeceras .= 'To: hjcorti.07@gmail.com' . "\r\n";
+        $cabeceras .= 'From: contacto@hugocorti.com.ar' . "\r\n";
+        // Enviarlo
+        //mail($para, $titulo, $cuerpo, $cabeceras);
+        //echo "<script>alert('Mensaje enviado, Gracias por contactarnos');   HACE FALTA UN SERVIDOR DE ENVIOS PARA QUE FUNCIONE
+        header('location:confimacion-envio.php');
+    }
 }
 
 
 
 
-session_start();$pagina = "contacto"  ?>
+
+session_start();
+$pagina = "contacto"  ?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -50,7 +55,7 @@ session_start();$pagina = "contacto"  ?>
 
 <body id="contacto" class="d-flex flex-column h-100">
     <header class="container">
-    <?php include_once("menu.php"); ?>
+        <?php include_once("menu.php"); ?>
     </header>
     <main class="container">
         <div class="row">
