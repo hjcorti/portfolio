@@ -1,3 +1,5 @@
+<?php
+session_start();$pagina = "sobre-mi"  ?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -16,37 +18,7 @@
 
 <body id="sobre-mi" class="d-flex flex-column h-100">
     <header class="container">
-        <nav class="navbar navbar-expand-md mb-4">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="sobre-mi.html">Sobre Mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <ul class="cv navbar-nav">
-                        <li class="float-sm-end">
-                            <a class="cv btn-blanco" href="contacto.html">Descargar mi CV <i
-                                    class="fa-solid fa-download"></i></a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
+    <?php include_once("menu.php"); ?>
 
     </header>
     <main>
@@ -56,7 +28,7 @@
                     <h1 class="pt-3 pb-4">Sobre mí</h1>
                     <p>Soy jefe de soporte técnico con experiencia en gestión de sistemas, redes, infraestructura y atención a usuarios. Mi foco está en resolver problemas reales con criterio técnico y enfoque práctico.</p>
                     <p>Actualmente estoy profundizando en programación web Full Stack para combinar la experiencia operativa con el desarrollo de soluciones digitales más completas y escalables.</p>
-                    <a href="contacto.html" class="btn btn-rojo my-3 d-none d-sm-inline-block">Enviar mensaje</a>
+                    <a href="contacto.php" class="btn btn-rojo my-3 d-none d-sm-inline-block">Enviar mensaje</a>
                 </div>
                 <div class="col-10 col-sm-3 py-4 pe-4 d-none d-sm-block">
                     <img src="images/hugo.jpg" alt="Hugo Javier Corti" class="img-fluid foto-perfil">
@@ -65,7 +37,7 @@
                     <img src="images/hugo.jpg" alt="Hugo Javier Corti" class="img-fluid foto-perfil">
                 </div>
                 <div class="col-6 d-sm-block d-sm-none py-3">
-                    <a href="contacto.html" class="btn btn-rojo my-3 d-sm-block d-sm-none">Enviar mensaje</a>
+                    <a href="contacto.php" class="btn btn-rojo my-3 d-sm-block d-sm-none">Enviar mensaje</a>
                 </div>
             </div>
         </section>
